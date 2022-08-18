@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  color: blueviolet;
+  font-weight: bold;
+  background-color: antiquewhite;
+}
+
+#enlace {
+  text-decoration: none;
+}
+
+#enlace1 {
+  text-decoration: none;
+}
+
+#enlace2 {
+  text-decoration: none;
+}
+
+#enlace3 {
+  text-decoration: none;
+}
+
+#enlace4 {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  background-color: aquamarine;
+  text-align: center;
+  font-size: x-large;
+}
+
+.body {
+  display: inline-grid;
+  grid-template-columns: 3fr;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+article {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .foto {
+    filter: grayscale(100%);
+    transition: all 2s;
+  }
+  .foto:hover {
+    filter: grayscale(0);
+    transform: scale(1.5);
+  }
+  .fotoCont {
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 10px;
+  }
+}
+.textolorem {
+  background-color: aquamarine;
+  font-size: large;
+  margin-top: 5%;
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+  -webkit-padding-end: 10%;
+          padding-inline-end: 10%;
+}
+
+.logo {
+  display: grid;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  justify-content: center;
+}
+
+.sobremi {
+  display: grid;
+  justify-items: center;
+  padding: 2%;
+}
+
+.trabajos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2%;
+}
+
+.carrousel {
+  display: inline-grid;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: x-large;
+  color: black;
+}
+
+h3 {
+  background-color: aquamarine;
+  font-size: x-large;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carrousel {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+  padding: 2%;
+  justify-items: center;
+}
+
+.producto {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 2%;
+}/*# sourceMappingURL=estilos.css.map */
