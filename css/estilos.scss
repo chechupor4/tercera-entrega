@@ -38,13 +38,6 @@ h2 {
   text-align: center;
   font-size: x-large;
 }
-.body{
-  display:grid;
-  grid-template-columns:  2fr;
-  justify-content: center;
-  row-gap: 10px;
-  margin:0 auto;
-}
 
 footer {
   display:grid;
@@ -58,17 +51,53 @@ article {
   display: grid;
   justify-content: center;
 }
-
-@media screen and (min-width: 320px) {
-  .body {
+@media (min-width:576px){
+  body{
     display: grid;
     grid-template-columns: 2fr;
     justify-content: center;
     row-gap: 10px;
     background-color: bisque;
+    margin: 0 auto;
+    
+
+  }
+}
+@media (min-width:768px){
+  body{
+  display: grid;
+  grid-template-columns: 2fr;
+  justify-content: center;
+  row-gap: 10px;
+  background-color: bisque;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;}
+}
+@media (min-width:992px){ 
+  body{
+  display: grid;
+  grid-template-columns: 2fr;
+  justify-content: center;
+  row-gap: 10px;
+  background-color: bisque;
+  margin: 0 auto;
+  }
+}
+@media (min-width:1200px){
+  body{
+    display: grid;
+  grid-template-columns: 2fr;
+  justify-content: center;
+  row-gap: 10px;
+  background-color: bisque;
+  margin: 0 auto;}
     
   }
-  .foto {
+
+
+  
+ .foto {
     filter: grayscale(100%);
     transition: all 2s;
   }
@@ -79,17 +108,8 @@ article {
   .fotoCont {
     overflow: hidden;
   }
-}
-@media screen and (min-width: 1200px) {
-  .body {
-    display: grid;
-    grid-template-columns: 2fr;
-    justify-content: center;
-    row-gap: 10px;
-    background-color: bisque;
-    margin: 0 auto;
-  }
-}
+
+
 
 .textolorem {
   background-color:#A6659B;
@@ -215,4 +235,21 @@ $redes: (Whatssap:green,Instagram:fuchsia);
   padding: 3%;
   
 
+}
+.ocasiones especiales{
+  margin: 0 auto;
+  padding: 10%;
+}
+.card ocasiones{
+  display: grid;
+  grid-template-columns: 2fr;
+  align-items: center;
+  margin: 0 auto;
+}
+.body{
+  display:grid;
+  grid-template-columns:  2fr;
+  justify-content: center;
+  row-gap: 10px;
+  margin:0 auto;
 }
